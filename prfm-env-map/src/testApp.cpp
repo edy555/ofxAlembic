@@ -71,21 +71,20 @@ void testApp::draw()
     glEnable(GL_TEXTURE_GEN_T);
 	// get meshes and draw
 	{
-        //gluSphere(quadratic, 100.0, 20, 20);
 		ofMesh mesh;
-		abc.get("/Aa-CHAN")->get(mesh);
+		abc.get("/Aa-CHAN", mesh);
 		ofSetColor(192, 192, 255);
 		mesh.draw();
 	}
 	{
 		ofMesh mesh;
-		abc.get("/KASHIYUKA")->get(mesh);
+		abc.get("/KASHIYUKA", mesh);
 		ofSetColor(255, 192, 192);
 		mesh.draw();
 	}
 	{
 		ofMesh mesh;
-		abc.get("/NOCCHi")->get(mesh);
+		abc.get("/NOCCHi", mesh);
 		ofSetColor(255, 255, 255);
 		mesh.draw();
 	}

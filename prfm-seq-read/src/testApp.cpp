@@ -53,24 +53,22 @@ void testApp::draw()
 
 	cam.begin();
 
-	//glPointSize(4);
-    
 	// get meshes and draw
 	{
 		ofMesh mesh;
-		abc.get("/Aa-CHAN")->get(mesh);
+		abc.get("/Aa-CHAN", mesh);
 		ofSetColor(0, 0, 255);
 		mesh.draw();
 	}
 	{
 		ofMesh mesh;
-		abc.get("/KASHIYUKA")->get(mesh);
+		abc.get("/KASHIYUKA", mesh);
 		ofSetColor(255, 0, 0);
 		mesh.draw();
 	}
 	{
 		ofMesh mesh;
-		abc.get("/NOCCHi")->get(mesh);
+		abc.get("/NOCCHi", mesh);
 		ofSetColor(255, 255, 255);
 		mesh.draw();
 	}
